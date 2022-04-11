@@ -5,10 +5,17 @@ package Lesson3_HW;
 иначе вывести “Извини, не пропустим”.
  */
 
+import java.util.Scanner;
+
 public class AdultsCinema {
     public static void main(String[] args) {
-        int age = 15;
-        if (age >18) {
+        Scanner input = new Scanner(System.in);
+        int age;
+        System.out.println("Введите ваш возраст");
+
+        age = input.nextInt();;
+
+        if (age > 18) {
             System.out.println("Приятного просмотра");
         }
         else {
