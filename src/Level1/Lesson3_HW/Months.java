@@ -1,4 +1,4 @@
-package Lesson3_HW;
+package Level1.Lesson3_HW;
 /*
 Месяцы
 - создать программу, с переменной “месяц” и значением от 1 до 12. Использовать
@@ -49,7 +49,7 @@ public class Months {
                 System.out.println("Декабрь");
                 break;
             default:
-                System.out.println("Вы ввели неправильное число: нет соответствия месяцу");
+                System.out.println("Вы ввели некорректное число: нет соответствия месяцу");
 
         }
 

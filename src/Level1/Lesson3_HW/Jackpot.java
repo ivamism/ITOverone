@@ -1,4 +1,4 @@
-package Lesson3_HW;
+package Level1.Lesson3_HW;
 
 /*Джекпот
 - создать программу, со строковой переменной “комбинация”, в строку записать
@@ -10,6 +10,10 @@ package Lesson3_HW;
 
 public class Jackpot {
     public static void main(String[] args) {
+        int slot_length = 3;
+
+
+
         int combination = 777;
         if (combination == 777) {
             System.out.println("Поздравляем, у Вас джекпот!");

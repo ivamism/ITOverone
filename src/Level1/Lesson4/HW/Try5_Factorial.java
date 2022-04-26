@@ -1,4 +1,4 @@
-package Lesson4.HW;
+package Level1.Lesson4.HW;
 
 //Создать программу, вычисляющую факториал числа.
 

@@ -1,4 +1,4 @@
-package Lesson4.HW;
+package Level1.Lesson4.HW;
 // Вывести числа от 5 до 10.
 public class Try1 {
     public static void main(String[] args) {

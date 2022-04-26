@@ -1,4 +1,4 @@
-package Exam1;
+package Level1.Exam1;
 //Даны два целых числа A и B (A < B).
 // Найти сумму всех целых чисел от A до B включительно.
 public class Task5 {

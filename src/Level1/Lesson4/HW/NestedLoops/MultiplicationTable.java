@@ -1,4 +1,4 @@
-package Lesson4.HW.NestedLoops;
+package Level1.Lesson4.HW.NestedLoops;
 
 public class MultiplicationTable {
     public static void main(String[] args) {

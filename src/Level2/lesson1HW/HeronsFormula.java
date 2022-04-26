@@ -7,7 +7,7 @@ package Level2.lesson1HW;
  */
 public class HeronsFormula {
     public static void main(String[] args) {
-        System.out.println("Площадь треугольника равна " + areaCalculation(5.0, 7.0, 4.5) + "см2");
+        System.out.println("Площадь треугольника равна " + areaCalculation(3.0, 4.0, 5.0) + "см2");
     }
     static double areaCalculation (double length, double width, double height) {
         double halfPerimeter = (length+height+width)/2;

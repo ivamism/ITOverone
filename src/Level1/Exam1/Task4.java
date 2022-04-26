@@ -1,4 +1,4 @@
-package Exam1;
+package Level1.Exam1;
 //Выведите столбец чисел от 1 до 50.
 public class Task4 {
     public static void main(String[] args) {
