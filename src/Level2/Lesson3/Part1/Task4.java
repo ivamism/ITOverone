@@ -6,20 +6,20 @@ package Level2.Lesson3.Part1;
 
 import java.util.Arrays;
 
-public class Task4ArraySum {
+public class Task4 {
     public static void main(String[] args) {
-        int[] arr = new int[15];
-        for (int i = 1; i < arr.length; i++) {
-            arr [i] = i;
+        int[] numbers = new int[5];
+        for (int i = 0; i < numbers.length; i++) {
+            numbers [i] = i+1;
         }
-        System.out.println(Arrays.toString(arr));
-        System.out.println(sum(arr));
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(sum(numbers));
     }
 
     static int sum(int arr[]) {
         int summ = 0;
-        for (int i = 0; i < arr.length; i++) {
-            summ += arr [i];
+        for (int j : arr) {
+            summ += j;
 
         }
         return summ;

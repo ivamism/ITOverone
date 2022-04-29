@@ -9,20 +9,18 @@ import java.util.Random;
 
 public class Task5 {
     public static void main(String[] args) {
-        int[] numb = new int[30];
+        int[] numbers = new int[30];
         Random numGen = new Random();
-        for (int i = 0; i < numb.length; i++) {
-            numb [i] = numGen.nextInt(20);
+        for (int i = 0; i < numbers.length; i++) {
+            numbers [i] = numGen.nextInt(20);
         }
-        System.out.println(Arrays.toString(numb));
+        System.out.println(Arrays.toString(numbers));
 
-        for (int i = 0; i < numb.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (i % 2 == 1) {
-                numb [i] = 0;
+                numbers [i] = 0;
             }
-
         }
-        System.out.println(Arrays.toString(numb));
-
+        System.out.println(Arrays.toString(numbers));
     }
 }

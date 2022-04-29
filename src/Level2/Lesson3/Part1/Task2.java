@@ -15,11 +15,8 @@ public class Task2 {
                 array[i] = "Нечетный";
             } else {
                 array[i] = "Четный";
-                ;
-            }
-
+                }
         }
-
         System.out.println(Arrays.toString(array));
     }
 }

@@ -1,5 +1,6 @@
 package Level2.Lesson3.Part1;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /*
@@ -10,39 +11,39 @@ import java.util.Random;
  */
 public class Task1 {
     public static void main(String[] args) {
-        int[] numb = new int[10];
+        int[] numb = new int[20];
         Random numGen = new Random();
         for (int i = 0; i < numb.length; i++) {
             numb [i] = numGen.nextInt(50);
             }
-        for (int j : numb) {
-            System.out.print(j);
-        }
 
-        System.out.println("Minimum = " + min(numb));
-        System.out.println("Maximum = " + max(numb));
+        System.out.println(Arrays.toString(numb));
+        System.out.println();
+
+        System.out.println("Minimum = " + minValue(numb));
+        System.out.println("Maximum = " + maxValue(numb));
 
     }
-    static int min(int[] numb) {
-        int minimum = numb[0];
-        for (int i:numb) {
-            if (numb [i] < minimum) {
-                numb[i] = minimum;
+    static int minValue(int[] arr) {
+        int minimum = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr [i] < minimum) {
+                minimum = arr[i];
             }
         }
         return minimum;
     }
-    static int max (int[] numb) {
-        int maximum = numb[0];
+    static int maxValue(int[] arr) {
+        int maximum = arr[0];
 
-        for (int i:numb) {
-            if (numb [i] < maximum) {
-                numb[i] = maximum;
+        for (int i = 0; i < arr.length; i++) {
+
+            if (arr [i] > maximum) {
+                maximum = arr[i];
             }
-
         }
         return maximum;
     }
     }
-
 

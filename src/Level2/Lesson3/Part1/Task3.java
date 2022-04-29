@@ -11,23 +11,18 @@ import java.util.Random;
 
 public class Task3 {
     public static void main(String[] args) {
-        int[] numb = new int[10];
+        int[] numbers = new int[10];
         Random numGen = new Random();
-        for (int i = 0; i < numb.length; i++) {
-            numb [i] = numGen.nextInt(20);
+        for (int i = 0; i < numbers.length; i++) {
+            numbers [i] = numGen.nextInt(20);
             }
-        System.out.println(Arrays.toString(numb));
+        System.out.println(Arrays.toString(numbers));
 
-        for (int i = 0; i < numb.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (i % 2 == 0) {
-                numb [i] *= (-1);
+                numbers [i] *= (-1);
             }
-
         }
-        System.out.println(Arrays.toString(numb));
-
-
-//        for (int j : numb) {
-//            System.out.println(j);
-        }
+        System.out.println(Arrays.toString(numbers));
+    }
 }
