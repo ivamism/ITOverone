@@ -12,31 +12,28 @@ public class Task3 {
         int[] numbers = new int[25];
         Random numGen = new Random();
         for (int i = 0; i < numbers.length; i++) {
-            numbers [i] = numGen.nextInt(20);
+            numbers [i] = numGen.nextInt(50);
         }
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(evenArrMembers(numbers)));
 
     }
    static int[] evenArrMembers (int[] sourceArray) {
-        int newArrLength;
-        if (sourceArray.length%2==0){
-            newArrLength = sourceArray.length/2;
-        }
-        else {
-            newArrLength = sourceArray.length/2+1;
-        }
-        int [] evenMembers = new int[newArrLength];
-         int j = 0;
-       for (int i=-1; i< sourceArray.length;i++) {
-           boolean isEven = (i % 2) == 0;
-           if (i % 2 == 0) {
-               evenMembers[j] = sourceArray[i];
-               j++;
+        int newArrLength = 0;
+       for (int number:sourceArray) {
+           if (number % 2 == 0) {
+               newArrLength++;
            }
        }
+        int [] evenMembersArray = new int[newArrLength];
+         int newArrayCounter = 0;
+       for (int sourceArrayNumber : sourceArray) {
 
-       return evenMembers;
-
+           if (sourceArrayNumber % 2 == 0) {
+               evenMembersArray[newArrayCounter] = sourceArrayNumber;
+               newArrayCounter++;
+           }
+       }
+       return evenMembersArray;
     }
 }
