@@ -1,29 +1,38 @@
 package Level2.MyTry;
 
 import java.util.Arrays;
-import java.util.Random;
+//import java.util.Random;
+
+//import static Level2.MyTry.MyArraysPatterns.*;
 
 public class VariationOfTask3 {
     public static void main(String[] args) {
-//        int[] numbers = new int[25];
-//        Random numGen = new Random();
-//        for (int i = 0; i < numbers.length; i++) {
-//            numbers [i] = numGen.nextInt(50);
-//        }
+
         int[] numbers = MyArraysPatterns.createRandomArray(25, 50, -10);
+        int[] numbers2 = MyArraysPatterns.createSequenceArray(20, 1);
+        int[] numbers3 = MyArraysPatterns.createReverseArray(25);
+        int[] numbers4 = MyArraysPatterns.createReverseArray(25, 10);
 
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(evenArrMembers(numbers)));
+        System.out.println(Arrays.toString(numbers2));
+        System.out.println(Arrays.toString(evenArrMembers(numbers2)));
+        System.out.println(Arrays.toString(numbers3));
+        System.out.println(Arrays.toString(evenArrMembers(numbers3)));
+        System.out.println(Arrays.toString(numbers4));
+        System.out.println(Arrays.toString(evenArrMembers(numbers4)));
+
 
     }
-    static int[] evenArrMembers (int[] sourceArray) {
+
+    static int[] evenArrMembers(int[] sourceArray) {
         int newArrLength = 0;
-        for (int number:sourceArray) {
+        for (int number : sourceArray) {
             if (number % 2 == 0) {
                 newArrLength++;
             }
         }
-        int [] evenMembersArray = new int[newArrLength];
+        int[] evenMembersArray = new int[newArrLength];
         int newArrayCounter = 0;
         for (int sourceArrayNumber : sourceArray) {
 
