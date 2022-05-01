@@ -1,9 +1,6 @@
 package Level2.MyTry;
 
 import java.util.Arrays;
-//import java.util.Random;
-
-//import static Level2.MyTry.MyArraysPatterns.*;
 
 public class VariationOfTask3 {
     public static void main(String[] args) {
@@ -12,6 +9,7 @@ public class VariationOfTask3 {
         int[] numbers2 = MyArraysPatterns.createSequenceArray(20, 1);
         int[] numbers3 = MyArraysPatterns.createReverseArray(25);
         int[] numbers4 = MyArraysPatterns.createReverseArray(25, 10);
+        int[] numbers5 = MyArraysPatterns.createSequenceRangeArray(5, 25);
 
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(evenArrMembers(numbers)));
@@ -21,6 +19,8 @@ public class VariationOfTask3 {
         System.out.println(Arrays.toString(evenArrMembers(numbers3)));
         System.out.println(Arrays.toString(numbers4));
         System.out.println(Arrays.toString(evenArrMembers(numbers4)));
+        System.out.println(Arrays.toString(numbers5));
+        System.out.println(Arrays.toString(evenArrMembers(numbers5)));
 
 
     }

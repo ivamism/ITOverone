@@ -46,6 +46,15 @@ public class MyArraysPatterns {
         }
         return numbers;
     }
+    public static int [] createSequenceRangeArray (int startFrom, int endOfRange) {
+        int arrLength = endOfRange - startFrom +1;
+        int[] numbers = new int[arrLength];
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers [i] = i + startFrom;
+        }
+        return numbers;
+    }
    public static int [] createReverseArray (int startFrom) {
         int arrLength = startFrom + 1;
         int[] numbers = new int[arrLength];
