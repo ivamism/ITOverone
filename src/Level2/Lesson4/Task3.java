@@ -36,4 +36,5 @@ public class Task3 {
        }
        return evenMembersArray;
     }
+
 }

@@ -40,7 +40,6 @@ public class MyArraysPatterns {
 
     public static int [] createSequenceArray (int arrLength, int startFrom) {
         int[] numbers = new int[arrLength];
-
         for (int i = 0; i < numbers.length; i++) {
             numbers [i] = i + startFrom;
         }
@@ -49,7 +48,6 @@ public class MyArraysPatterns {
     public static int [] createSequenceRangeArray (int startFrom, int endOfRange) {
         int arrLength = endOfRange - startFrom +1;
         int[] numbers = new int[arrLength];
-
         for (int i = 0; i < numbers.length; i++) {
             numbers [i] = i + startFrom;
         }
