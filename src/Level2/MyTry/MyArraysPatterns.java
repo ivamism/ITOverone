@@ -48,7 +48,4 @@ public class MyArraysPatterns {
         return numbers;
     }
 
-//    public static void main(String[] args) {
-//        System.out.println(Arrays.toString(createRandomArray(10)));
-//    }
 }
