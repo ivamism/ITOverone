@@ -6,11 +6,11 @@ package Level2.Lesson5;
 public class Task4 {
     public static void main(String[] args) {
         String string =
-                "Написать 3 метода, которые подсчитывают количество всех точек, запятых и восклицательных знаков в строке.!";
+                "Написать 3 метода, которые подсчитывают количество всех точек(..), запятых(,,,) и восклицательных знаков (!!!!) в этой строке.";
+        System.out.println(string);
         countOfDots(string);
         countOfCommas(string);
         countOfExclamations(string);
-
     }
 
     private static void countOfCommas(String s) {
@@ -20,7 +20,6 @@ public class Task4 {
             if (ch == ',') {
                 commaQuantity++;
             }
-
         }
         System.out.println("В этой строке " + commaQuantity + " запятых");
     }
@@ -29,13 +28,11 @@ public class Task4 {
         char[] chars = s.toCharArray();
         int exclamationQuantity = 0;
         for (int ch : chars) {
-            if (ch == ',') {
+            if (ch == '!') {
                 exclamationQuantity++;
             }
-
         }
         System.out.println("В этой строке " + exclamationQuantity + " восклицательных знаков");
-
     }
 
     private static void countOfDots(String s) {
@@ -45,7 +42,6 @@ public class Task4 {
             if (ch == '.') {
                 dotQuantity++;
             }
-
         }
         System.out.println("В этой строке " + dotQuantity + " точек");
     }

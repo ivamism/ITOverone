@@ -6,21 +6,16 @@ package Level2.Lesson5;
 
 public class Task2 {
     public static void main(String[] args) {
-        String surname = "Мочалов";
+        String surname = "мочалов";
         String name = "Иван";
-        String fathersName = "Станиславович";
-        printFIO (surname, name, fathersName);
-
+        String fathersName = "станиславович";
+        System.out.println("Ф.И.О. - " + createInitials(surname, name, fathersName));
     }
-
-    private static void printFIO(String sn, String nm, String fn) {
-//        String abbreviation;
+    private static String createInitials(String sn, String nm, String fn) {
         char s = sn.charAt(0);
         char n = nm.charAt(0);
         char f = fn.charAt(0);
-//        abbreviation =  + + ;
-        System.out.println(s + "." + n + "."+ f +".");
-
-//        return abbreviation;
+        String initials =  s + "." + n + "."+ f +".";
+        return initials.toUpperCase();
     }
 }
