@@ -6,10 +6,10 @@ package Level2.Lesson5;
 
 public class Task1 {
     public static void main(String[] args) {
-        String exemple = "Привет";
+        String example = "Привет";
 
-        printPosition(exemple, 0);
-        printPosition(exemple, 3);
+        printPosition(example, 0);
+        printPosition(example, 3);
         }
         static void printPosition (String s, int position){
             System.out.println("Символ на позиции " + position + " это " + s.toUpperCase().charAt(position));
