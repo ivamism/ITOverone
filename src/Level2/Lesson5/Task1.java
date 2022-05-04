@@ -12,7 +12,7 @@ public class Task1 {
         printPosition(exemple, 3);
         }
         static void printPosition (String s, int position){
-            System.out.println("Символ на позиции " + position + " это " + s.charAt(position));
+            System.out.println("Символ на позиции " + position + " это " + s.toUpperCase().charAt(position));
 
         }
 
