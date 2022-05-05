@@ -4,8 +4,8 @@ package Level2.Exam2;
 
 public class Task6 {
     public static void main(String[] args) {
-        int number1 = 64;
-        int number2 = 28;
+        int number1 = 999577838;
+        int number2 = 966;
         System.out.println("Наибольший общий делитель чисел " + number1 + " и " + number2 + " равен " + findMaxDivisor (number1, number2));
     }
 
@@ -26,7 +26,6 @@ public class Task6 {
                 break;
             }
         }
-
         return maxDivisor;
     }
 }
