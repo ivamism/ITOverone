@@ -1,4 +1,6 @@
 package Level2.Exam2;
+//  Вариант Ангелины
+//  Проверка работы
 
 public class Task6_2 {
     public static void main(String[] args) {
