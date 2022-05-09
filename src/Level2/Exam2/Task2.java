@@ -8,11 +8,11 @@ public class Task2 {
         System.out.println("Среднее арифметическое чисел от 1 до 9 равно - " + findAverage());
     }
 
-    private static int findAverage() {
+    private static double findAverage() {
         int sum = 0;
         for (int i = 1; i <= 9; i++) {
             sum += i;
         }
-        return sum/9;
+        return 1.0 * sum/9;
     }
 }
