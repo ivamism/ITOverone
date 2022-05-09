@@ -5,12 +5,12 @@ package Level2.Exam2;
  */
 public class Task5 {
     public static void main(String[] args) {
-        String string1 = "asdfasdsdf";
-        String string2 = "asd";
+        String string1 = "asdfasdsdfasd";
+        String string2 = "sd";
         System.out.println("Строка 2 встречается в строке 1 " + isContain(string1, string2) + " раз");
     }
 
-    private static int isContain(String string1, String string2) {
+    static int isContain(String string1, String string2) {
         int quantity = 0;
         int indexFrom = 0;
         while (indexFrom != -1) {

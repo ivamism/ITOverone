@@ -8,7 +8,7 @@ public class Task4 {
         boolean[] booleansArray = {true, false, true, true};
         System.out.println(isHomogenius(booleansArray));
     }
-    private static boolean isHomogenius(boolean[] booleansArray) {
+    static boolean isHomogenius(boolean[] booleansArray) {
         boolean homogenius = true;
         boolean b = booleansArray[0];
         for (boolean value : booleansArray) {
