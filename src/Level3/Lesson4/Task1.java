@@ -21,9 +21,12 @@ public class Task1 {
         };
 
         for (Product currentProduct: products) {
-            currentProduct.showInfo();
+            System.out.println(currentProduct)  ;
             currentProduct.howToUse();
         }
+//        Apple apple = new Apple(1.2,"kg", "fruit");
+//        System.out.println(apple.toString()) ;
+//        apple.howToUse();
     }
 }
 abstract class Product {
@@ -37,11 +40,21 @@ abstract class Product {
         this.type = type;
     }
 
-    void showInfo() {
-        System.out.println("Цена: " + price);
-        System.out.println("единица измерения: " + unitOfMesure);
-        System.out.println("тип: " + type);
+    @Override
+    public String toString() {
+        return "Product{" +
+                "price=" + price +
+                ", unitOfMesure='" + unitOfMesure + '\'' +
+                ", type='" + type + '\'' +
+                '}';
     }
+
+    //    void showInfo() {
+//        System.out.println("Цена: " + price);
+//        System.out.println("единица измерения: " + unitOfMesure);
+//        System.out.println("тип: " + type);
+//    }
+
     abstract void howToUse();
     }
     class Apple extends Product {
@@ -55,7 +68,8 @@ abstract class Product {
             System.out.println("помыть и порезать");
             System.out.println();
             }
-        }
+    }
+
         class Soup extends Product {
             public Soup(double price, String unitOfMesure, String type) {
                 super(price, unitOfMesure, type);
