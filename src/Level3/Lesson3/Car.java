@@ -15,7 +15,6 @@ public class Car {
         joinGearFlywhil();
         startEngin();
     }
-
     private void startEngin() {
         System.out.println("запустить двигатель");
     }
@@ -25,14 +24,21 @@ public class Car {
     }
 
     private void supplyPowerToStarter() {
-        System.out.println("передать ток на стартер");
+        System.out.println("Соединить стартер с маховиком");
     }
 
     private void takePower() {
         System.out.println("взять ток с аккумулятора");
     }
-
-    public static void main(String[] args) {
-
     }
-}
+    class UsingCar {
+        public static void main(String[] args) {
+            Car car = new Car();
+//            car.takePower();
+//            car.supplyPowerToStarter();
+//            car.joinGearFlywhil();
+//            car.startEngin();
+//            не возможно вызвать методы
+            car.start();
+        }
+    }

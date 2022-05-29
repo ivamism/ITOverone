@@ -8,34 +8,33 @@ package Level3.Lesson2;
  а также несколько объектов с помощью конструктора с параметрами. Вызовите на со
 зданных объектах метод printInfo зданных объектах метод printInfo.
  */
-
 public class Error {
     boolean isActive;
     int statusCode;
     String message;
 
-     Error(boolean isActive, int statusCode, String message) {
+    Error(boolean isActive, int statusCode, String message) {
         this.isActive = isActive;
         this.statusCode = statusCode;
         this.message = message;
     }
 
-     Error(){}
+    Error() {
+    }
 
-    void printInfo (){
+    void printInfo() {
         System.out.println(isActive);
         System.out.println(statusCode);
         System.out.println(message);
         System.out.println("");
     }
 
-
     public static void main(String[] args) {
-         Error err1 = new Error(true,   1, "Error I/O");
-         Error err2 = new Error();
-         err2.isActive = false;
-         err2.statusCode = 0;
-         err2.message = "Out Of Disk Space";
+        Error err1 = new Error(true, 1, "Error I/O");
+        Error err2 = new Error();
+        err2.isActive = false;
+        err2.statusCode = 0;
+        err2.message = "Out Of Disk Space";
         err1.printInfo();
         err2.printInfo();
     }

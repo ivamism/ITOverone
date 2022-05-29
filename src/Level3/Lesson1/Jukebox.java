@@ -11,7 +11,6 @@ package Level3.Lesson1;
 
 public class Jukebox {
     public static void main(String[] args) {
-        Jukebox jb = new Jukebox();
         music(1) ;
         music(2) ;
         music(5) ;

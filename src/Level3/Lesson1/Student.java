@@ -4,11 +4,8 @@ package Level3.Lesson1;
 Этот метод должен выводить на консоль слова "I believe I can fly".
 Также у вас должен быть метод playMusic, который выводит на экран “tra-tra-tra”.
 В методе main попросите Петю три раза сыграть на баяне и три раза спеть.
-
  */
-
 public class Student {
-
     public static void main(String[] args) {
       Student petya = new Student();
       petya.playMusic();
@@ -18,14 +15,10 @@ public class Student {
       petya.singSong();
       petya.singSong();
       petya.singSong();
-
-
     }
-
     private void singSong() {
         System.out.println("I believe I can fly");
     }
-
     void playMusic() {
         System.out.println("tra-tra-tra");
     }
